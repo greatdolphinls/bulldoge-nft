@@ -14,8 +14,7 @@ const useStyles = makeStyles(() => ({
   },
   container: {
     display: 'flex',
-    justifyContent: 'center',
-    flex: '1 0 auto'
+    flex: '1 0 auto',
   },
 }));
 

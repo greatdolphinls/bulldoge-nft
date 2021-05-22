@@ -26,6 +26,7 @@ const useStyles = makeStyles(theme => ({
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    backgroundColor: theme.palette.primary.main,
   },
   container: {
     width: '100%',
