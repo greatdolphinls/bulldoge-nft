@@ -1,11 +1,14 @@
 
 import { memo } from 'react'
 
+import HomeHeader from './HomeHeader'
+
 const Home = () => {
   return (
-    <>
-      Landing page
-    </>
+    <div>
+      <HomeHeader />
+      <HomeHeader />
+    </div>
   )
 }
 

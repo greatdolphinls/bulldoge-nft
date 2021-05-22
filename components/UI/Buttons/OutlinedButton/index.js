@@ -11,17 +11,19 @@ const useStyles = makeStyles(theme => ({
     fontSize: 18,
     borderRadius: 10,
     textTransform: 'capitalize',
+    border: `1px solid ${theme.palette.secondary.main}`
   },
   disabled: {
     opacity: 0.6,
     color: `${theme.palette.primary.main} !important`,
+    border: `2px solid ${theme.palette.primary.main} !important`,
   }
 }));
 
-const ContainedButton = React.forwardRef(({
+const OutlinedButton = React.forwardRef(({
   className,
   classes: propClasses = {},
-  color = 'primary',
+  color = 'secondary',
   href,
   loading,
   disabled,
@@ -41,7 +43,7 @@ const ContainedButton = React.forwardRef(({
         disabled: classes.disabled
       }}
       color={color}
-      variant='contained'
+      variant='outlined'
       disabled={loading || disabled}
       {...rest}
     >
@@ -50,4 +52,4 @@ const ContainedButton = React.forwardRef(({
   );
 });
 
-export default memo(ContainedButton);
+export default memo(OutlinedButton);

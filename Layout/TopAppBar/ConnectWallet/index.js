@@ -74,7 +74,7 @@ const ConnectWallet = () => {
           className={classes.connect}
           onClick={walletHandler}
         >
-          Connect
+          Connect Wallet
         </ContainedButton>
       )
   );

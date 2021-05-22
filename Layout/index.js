@@ -4,9 +4,8 @@ import { makeStyles } from '@material-ui/core/styles'
 
 import TopAppBar from './TopAppBar'
 import Footer from './Footer'
-import { useCommonStyles } from 'styles/use-styles'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
@@ -16,8 +15,7 @@ const useStyles = makeStyles((theme) => ({
   container: {
     display: 'flex',
     justifyContent: 'center',
-    flex: '1 0 auto',
-    margin: theme.spacing(5, 0)
+    flex: '1 0 auto'
   },
 }));
 
@@ -25,15 +23,12 @@ const Layout = ({
   children
 }) => {
   const classes = useStyles();
-  const commonClasses = useCommonStyles();
 
   return (
     <main className={classes.root}>
       <TopAppBar />
       <div className={classes.container}>
-        <div className={commonClasses.containerWidth}>
-          {children}
-        </div>
+        {children}
       </div>
       <Footer />
     </main>

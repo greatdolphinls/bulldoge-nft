@@ -19,10 +19,10 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 'bold',
     textTransform: 'unset',
     marginLeft: theme.spacing(2),
-    color: theme.palette.text.primary
+    color: theme.palette.primary.main
   },
   selected: {
-    color: theme.palette.primary.main
+    color: theme.palette.text.primary
   }
 }));
 
