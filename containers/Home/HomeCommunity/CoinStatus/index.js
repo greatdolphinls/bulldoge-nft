@@ -34,7 +34,6 @@ const useStyles = makeStyles(theme => ({
   value: {
     fontSize: 24,
     fontWeight: 'bold',
-
   }
 }));
 

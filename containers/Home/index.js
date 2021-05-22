@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles'
 
 import HomeHeader from './HomeHeader'
 import HomeCommunity from './HomeCommunity'
+import DogeInfo from './DogeInfo'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -18,6 +19,7 @@ const Home = () => {
     <div className={classes.root}>
       <HomeHeader />
       <HomeCommunity />
+      <DogeInfo />
     </div>
   )
 }
