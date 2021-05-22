@@ -21,9 +21,10 @@ const theme = responsiveFontSizes(createMuiTheme({
     background: {
       default: '#5B3512',
       primary: '#4A2C10',
+      secondary: '#3F2207'
     },
     text: {
-      primary: '#7E4E22',
+      primary: '#C99E77',
       secondary: '#FFFAF2'
     },
   },

@@ -46,10 +46,7 @@ const Logo = ({
             alt='logo'
           />
         </picture>
-        <Typography
-          color='textPrimary'
-          className={classes.title}
-        >
+        <Typography color='primary' className={classes.title}>
           BullDoge
         </Typography>
       </a>

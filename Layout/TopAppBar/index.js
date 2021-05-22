@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
 
 import Logo from 'components/Logo'
+import NavBarMenu from './NavBarMenu'
 import ConnectWallet from './ConnectWallet'
 import { useCommonStyles } from 'styles/use-styles'
 
@@ -21,6 +22,10 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'space-between',
   },
+  menu: {
+    display: 'flex',
+    alignItems: 'center'
+  }
 }));
 
 const TopAppBar = () => {
@@ -33,7 +38,10 @@ const TopAppBar = () => {
       className={classes.appBar}
     >
       <Toolbar className={clsx(classes.toolBar, commonClasses.containerWidth)}>
-        <Logo />
+        <div className={classes.menu}>
+          <Logo />
+          <NavBarMenu />
+        </div>
         <ConnectWallet />
       </Toolbar>
     </AppBar>

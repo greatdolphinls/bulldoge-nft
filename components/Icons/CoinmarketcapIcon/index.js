@@ -13,17 +13,17 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const TwitterIcon = ({
+const CoinmarketcapIcon = ({
   className,
 }) => {
   const classes = useStyles();
 
   return (
-    <Link href={SOCIALS.TWITTER.HREF}>
-      <a aria-label={SOCIALS.TWITTER.LABEL} target='_blank' rel='noreferrer'>
+    <Link href={SOCIALS.COINMARKETCAP.HREF}>
+      <a aria-label={SOCIALS.COINMARKETCAP.LABEL} target='_blank' rel='noreferrer'>
         <img
-          alt={SOCIALS.TWITTER.LABEL}
-          src={SOCIALS.TWITTER.ICON}
+          alt={SOCIALS.COINMARKETCAP.LABEL}
+          src={SOCIALS.COINMARKETCAP.ICON}
           className={clsx(classes.root, className)}
         />
       </a>
@@ -31,4 +31,4 @@ const TwitterIcon = ({
   )
 }
 
-export default memo(TwitterIcon);
+export default memo(CoinmarketcapIcon);

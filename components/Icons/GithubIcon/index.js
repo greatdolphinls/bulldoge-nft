@@ -13,17 +13,17 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const TwitterIcon = ({
+const GithubIcon = ({
   className,
 }) => {
   const classes = useStyles();
 
   return (
-    <Link href={SOCIALS.TWITTER.HREF}>
-      <a aria-label={SOCIALS.TWITTER.LABEL} target='_blank' rel='noreferrer'>
+    <Link href={SOCIALS.GITHUB.HREF}>
+      <a aria-label={SOCIALS.GITHUB.LABEL} target='_blank' rel='noreferrer'>
         <img
-          alt={SOCIALS.TWITTER.LABEL}
-          src={SOCIALS.TWITTER.ICON}
+          alt={SOCIALS.GITHUB.LABEL}
+          src={SOCIALS.GITHUB.ICON}
           className={clsx(classes.root, className)}
         />
       </a>
@@ -31,4 +31,4 @@ const TwitterIcon = ({
   )
 }
 
-export default memo(TwitterIcon);
+export default memo(GithubIcon);

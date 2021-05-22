@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     cursor: 'pointer',
-    border: `2px dashed ${theme.palette.text.primary}`,
+    border: `2px dashed ${theme.palette.primary.main}`,
     padding: theme.spacing(0.5, 1.5)
   },
   connect: {
@@ -63,7 +63,7 @@ const ConnectWallet = () => {
         >
           <Typography
             variant='body2'
-            color='textPrimary'
+            color='primary'
           >
             {getEllipsis(account || '')}
           </Typography>
