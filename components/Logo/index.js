@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'unset'
   },
   img: {
-    height: 40,
+    height: 58,
     objectFit: 'contain',
   },
   title: {

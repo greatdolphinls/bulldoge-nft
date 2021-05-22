@@ -4,40 +4,11 @@ import {
   responsiveFontSizes
 } from '@material-ui/core/styles'
 
-const fontFamily = [
-  'Montserrat',
-  'Rubik',
-  '-apple-system',
-  'BlinkMacSystemFont',
-  '"Segoe UI"',
-  'Arial',
-  'sans-serif',
-  '"Apple Color Emoji"',
-  '"Segoe UI Emoji"',
-  '"Segoe UI Symbol"',
-]
-
 const theme = responsiveFontSizes(createMuiTheme({
-  typography: {
-    fontFamily: fontFamily.join(',')
-  },
-  MuiCssBaseline: {
-    '@global': {
-      '@font-face': [{
-        fontFamily: 'Montserrat',
-        fontStyle: 'normal',
-        fontDisplay: 'swap',
-        fontWeight: 400,
-        src: `
-          local('Montserrat'),
-          url('/assets/fonts/Montserrat.woff') format('woff')`
-      }],
-    }
-  },
   palette: {
     primary: {
       light: '#4791db',
-      main: '#1e2644',
+      main: '#7E4E22',
       dark: '#ecebed',
       contrastText: '#ffffff'
     },
@@ -48,22 +19,21 @@ const theme = responsiveFontSizes(createMuiTheme({
       main: '#eb196e',
     },
     background: {
-      default: '#1c2132',
-      primary: '#1e2644',
+      default: '#5B3512',
+      primary: '#4A2C10',
     },
     text: {
-      primary: '#337ab7',
-      secondary: '#FFFFFF'
+      primary: '#7E4E22',
+      secondary: '#FFFAF2'
     },
   },
   custom: {
     palette: {
-      white: '#FFFFFF',
-      green: '#28C76F'
+      white: '#FFFFFF'
     },
     layout: {
       maxDesktopWidth: 1260,
-      topAppBarHeight: 65
+      topAppBarHeight: 80
     },
   }
 }));

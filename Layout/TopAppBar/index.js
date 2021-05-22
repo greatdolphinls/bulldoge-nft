@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     width: '100%',
     height: theme.custom.layout.topAppBarHeight,
-    backgroundColor: theme.palette.background.default
+    backgroundColor: theme.palette.text.secondary
   },
   toolBar: {
     display: 'flex',
