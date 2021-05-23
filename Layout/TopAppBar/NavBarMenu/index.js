@@ -18,8 +18,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     fontWeight: 'bold',
     textTransform: 'unset',
-    marginLeft: theme.spacing(2),
-    color: theme.palette.primary.main
+    marginLeft: theme.spacing(1),
+    color: theme.custom.palette.topMenu
   },
   selected: {
     color: theme.palette.text.primary

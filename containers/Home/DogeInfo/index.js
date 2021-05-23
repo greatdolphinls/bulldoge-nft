@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    backgroundColor: theme.palette.background.secondary,
+    backgroundColor: theme.custom.palette.orange,
   },
   container: {
     width: '100%',

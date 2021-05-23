@@ -10,8 +10,8 @@ const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
     justifyContent: 'center',
-    height: theme.custom.layout.topAppBarHeight,
-    backgroundColor: theme.palette.background.secondary,
+    padding: theme.spacing(4, 0, 1),
+    backgroundColor: theme.custom.palette.footer,
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column',
     },

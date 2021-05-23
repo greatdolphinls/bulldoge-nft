@@ -5,13 +5,9 @@ const LINKS = Object.freeze({
     HREF: '/'
   },
   NFT_FARM: {
-    TITLE: '*NFT Farm*',
+    TITLE: '3D NFT for VR',
     HREF: '/nft-farm'
-  },
-  DOGEN: {
-    TITLE: 'Dogen',
-    HREF: '/dogen'
-  },
+  }
 });
 
 export default LINKS;

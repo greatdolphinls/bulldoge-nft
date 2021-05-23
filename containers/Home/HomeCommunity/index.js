@@ -24,6 +24,11 @@ const useStyles = makeStyles(theme => ({
       flexDirection: 'column-reverse',
     }
   },
+  header: {
+    fontSize: 36,
+    fontWeight: 'bold',
+    marginBottom: theme.spacing(2)
+  },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
@@ -58,6 +63,13 @@ const HomeCommunity = () => {
         <CoinStatus />
         <Grid container className={classes.container} >
           <Grid item sm={12} md={6}>
+            <Typography
+              color='textSecondary'
+              className={classes.header}
+            >
+              BULLDOGE Token
+            </Typography>
+
             <Typography
               color='textSecondary'
               className={classes.title}
@@ -104,13 +116,15 @@ const HomeCommunity = () => {
               color='textSecondary'
               className={classes.title}
             >
-              Supreme Craftsmanship
+              3D NFT Yield
             </Typography>
             <Typography
               color='textSecondary'
               className={classes.description}
             >
-              BullDoge holders support featured artists by staking to earn certifiably-rare quality digital art pieces in the BullDoge NFT Farms.
+              BullDoge holders support featured artists by staking BullDoge LP to earn
+              certifiably-rare quality digital 3D models of the BullDoge intended for
+              use in VR.
             </Typography>
           </Grid>
           <Grid item sm={12} md={6} className={classes.imageContainer} >

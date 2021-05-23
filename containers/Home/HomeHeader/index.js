@@ -14,6 +14,7 @@ import {
   HOME_HEADER_BONE_BACKGROUND_PATH
 } from 'utils/constants/image-paths'
 import LINKS from 'utils/constants/links'
+import SOCIALS from 'utils/constants/social'
 import { useCommonStyles } from 'styles/use-styles'
 
 const useStyles = makeStyles(theme => ({
@@ -26,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.background.secondary,
   },
   container: {
     width: '100%',
@@ -43,10 +44,9 @@ const useStyles = makeStyles(theme => ({
     },
   },
   description: {
-    fontSize: 20,
+    fontSize: 18,
     marginBottom: theme.spacing(5),
     [theme.breakpoints.down('sm')]: {
-      fontSize: 18,
       textAlign: 'center',
     },
   },
@@ -62,16 +62,18 @@ const useStyles = makeStyles(theme => ({
   },
   nftButton: {
     fontSize: 24,
-    marginRight: theme.spacing(5),
+    minWidth: 180,
     color: theme.palette.primary.main,
     backgroundColor: theme.palette.text.secondary,
-    [theme.breakpoints.down('xs')]: {
-      marginRight: 0,
-      marginBottom: theme.spacing(2.5),
-    }
   },
   buyButton: {
     fontSize: 24,
+    marginLeft: theme.spacing(3),
+    minWidth: 180,
+    [theme.breakpoints.down('xs')]: {
+      marginLeft: 0,
+      marginTop: theme.spacing(2.5),
+    }
   },
   imageContainer: {
     display: 'flex',
@@ -95,12 +97,12 @@ const HomeHeader = () => {
   return (
     <section className={classes.root}>
       <Grid container className={clsx(classes.container, commonClasses.containerWidth)} >
-        <Grid item sm={12} md={6}>
+        <Grid item sm={12} md={7}>
           <Typography
             variant='h5'
             color='textSecondary'
           >
-            Welcome
+            Farm
           </Typography>
           <Typography
             variant='h1'
@@ -110,13 +112,12 @@ const HomeHeader = () => {
             BullDoge
           </Typography>
           <Typography
-            variant='h5'
             color='textSecondary'
             className={classes.description}
           >
-            The BullDoge Protocol is a community driven, fair launched
-            DeFi Token with an NFT Farm. Three simple functions occur
-            during each trade: Reflection, LP Acquisition, and Burn.
+            The BullDoge Protocol is a community driven, fair launched DeFi Token
+            with an NFT Farm where users stake BullDoge to get Rice and use Rice
+            to buy a limited-edition 3D NFT of a BullDoge intended for use in VR.
           </Typography>
 
           <div className={classes.buttonContainer}>
@@ -124,14 +125,27 @@ const HomeHeader = () => {
               href={LINKS.NFT_FARM.HREF}
               className={classes.nftButton}
             >
-              NFT Farm
+              Farm 3D NFT
             </ContainedButton>
-            <OutlinedButton className={classes.buyButton}>
-              Buy Now
+            <OutlinedButton
+              href={SOCIALS.PANCAKE_SWAP.HREF}
+              className={classes.buyButton}
+              target='_blank'
+              rel='noreferrer'
+            >
+              Buy BullDoge
+            </OutlinedButton>
+            <OutlinedButton
+              href={SOCIALS.MAKE_LP.HREF}
+              className={classes.buyButton}
+              target='_blank'
+              rel='noreferrer'
+            >
+              Make LP
             </OutlinedButton>
           </div>
         </Grid>
-        <Grid item sm={12} md={6} className={classes.imageContainer} >
+        <Grid item sm={12} md={5} className={classes.imageContainer} >
           <img
             alt='bulldoge face'
             src={BULLDOGE_FACE_ICON_PATH}

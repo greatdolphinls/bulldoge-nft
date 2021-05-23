@@ -6,17 +6,17 @@ const SOCIALS = Object.freeze({
     ICON: '/assets/images/socials/coinmarketcap.png'
   },
   TELEGRAM: {
-    HREF: 'https://t.me/dogenfinance',
+    HREF: 't.me/bulldogetoken',
     LABEL: 'telegram link',
     ICON: '/assets/images/socials/telegram.png'
   },
   MEDIUM: {
-    HREF: 'https://dogenfinance.medium.com/',
+    HREF: 'https://dogenfinance.medium.com/bulldoge-airdrop-debrief-ffd219318976',
     LABEL: 'medium link',
     ICON: '/assets/images/socials/medium.png'
   },
   TWITTER: {
-    HREF: 'https://twitter.com/Dogenfinance',
+    HREF: 'https://twitter.com/bulldogetoken',
     LABEL: 'twitter link',
     ICON: '/assets/images/socials/twitter.png'
   },
@@ -28,6 +28,12 @@ const SOCIALS = Object.freeze({
   REDDIT: {
     HREF: 'https://www.reddit.com',
     LABEL: 'reddit link'
+  },
+  MAKE_LP: {
+    HREF: 'https://exchange.pancakeswap.finance/#/add/BNB/0xe71C62FC7197493b6e3634b861165bac548FCa5E'
+  },
+  PANCAKE_SWAP: {
+    HREF: 'https://exchange.pancakeswap.finance/#/swap'
   },
 })
 

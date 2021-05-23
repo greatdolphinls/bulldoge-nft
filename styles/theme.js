@@ -8,7 +8,7 @@ const theme = responsiveFontSizes(createMuiTheme({
   palette: {
     primary: {
       light: '#4791db',
-      main: '#C99E77',
+      main: '#F19E4A',
       dark: '#ecebed',
       contrastText: '#ffffff'
     },
@@ -19,9 +19,9 @@ const theme = responsiveFontSizes(createMuiTheme({
       main: '#eb196e',
     },
     background: {
-      default: '#5B3512',
-      primary: '#4A2C10',
-      secondary: '#3F2207'
+      default: '#FC8B23',
+      primary: '#C06817',
+      secondary: '#7e4e22'
     },
     text: {
       primary: '#7E4E22',
@@ -30,7 +30,11 @@ const theme = responsiveFontSizes(createMuiTheme({
   },
   custom: {
     palette: {
-      white: '#FFFFFF'
+      white: '#FFFFFF',
+      lightOrange: '#F8C477',
+      orange: '#FAAA60',
+      topMenu: '#C99E77',
+      footer: '#FFEFB5'
     },
     layout: {
       maxDesktopWidth: 1260,
