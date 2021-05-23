@@ -25,6 +25,10 @@ const SOCIALS = Object.freeze({
     LABEL: 'github link',
     ICON: '/assets/images/socials/github.png'
   },
+  REDDIT: {
+    HREF: 'https://www.reddit.com',
+    LABEL: 'reddit link'
+  },
 })
 
 export default SOCIALS;

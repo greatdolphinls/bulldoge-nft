@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import HomeHeader from './HomeHeader'
 import HomeCommunity from './HomeCommunity'
 import DogeInfo from './DogeInfo'
+import HomeNFTs from './HomeNFTs'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -20,6 +21,7 @@ const Home = () => {
       <HomeHeader />
       <HomeCommunity />
       <DogeInfo />
+      <HomeNFTs />
     </div>
   )
 }
